@@ -8,6 +8,7 @@ import { ref, remove } from "firebase/database";
 
 
 function Sahifa2() {
+    
     const [dlt, setDlt]=useState(false);
     const oyna=useSelector(k=>k.oyna)
     const malumot=useSelector(k=>k.oydt)

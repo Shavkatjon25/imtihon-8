@@ -23,7 +23,7 @@ const router=createBrowserRouter([
 function App() {
   
   const [mod, setMod]=useState(localStorage.getItem('md'));
-  const [invoise, setInvoise]=useState(false);
+  
 
 
   function Dark(bul){
@@ -36,8 +36,8 @@ function App() {
     <div className={`lg:flex min-h-[100vh] bgd max-w-[1740px] lg:mx-auto ${ mod=='dark' ? 'md':''}`}>
       <Hedr m={Dark} n={mod}/>
       <RouterProvider router={router}/>
-      <New/>
       <Edit/>
+      <New/>
     </div>
     </Provider>
   )

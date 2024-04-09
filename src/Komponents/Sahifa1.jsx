@@ -21,13 +21,13 @@ const dispach=useDispatch()
     onValue(starCountRef, (snapshot) => {
       const data = snapshot.val();
       setDt(Object.values(data));
+      console.log(Object.values(data));
     });
   }, [])
 
 
   return (
     <div className={`pt-8 max-w-[730px] mx-auto lg:pt-[78px]`}>
-      <New/>
       <div className="flex px-6 gap-[18px] lg:w-[730px] lg:p-0">
           <div className="flex-1">
             <h2 className="invo md:text-[32px] lg:text-[36px] lg:mb-[6px]">Invoices</h2>

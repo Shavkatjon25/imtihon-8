@@ -19,7 +19,7 @@ export default function App() {
     const [arr, setArr]=useState([1])
     const [vl, setVl]=useState(true)
     const dispach=useDispatch();
-    dispach(Omborchi.actions.bo())
+   
     const { 
     adres,
     city,
@@ -35,15 +35,19 @@ export default function App() {
     kun,
     muddat,
     pd, itm} = useSelector((state) => state)
-    const dispa=useDispatch()
+    
+
+    console.log('n');
 
     function Hendl(e, k){
-        dispa(Omborchi.actions.oy())       
+             
 
         if (adres&&city&&postcode&&country&&name&&email&&cadres&&ccity&&ccountry&&cpostcode&&kun&&muddat&&pd) {
             const date=new Date();
             const soat=date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay()+'__'+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
             writeUserData(adres, city, postcode, country, name, email, cadres, ccity, ccountry, cpostcode, kun, muddat, pd, itm, k, soat)
+            dispach(Omborchi.actions.oy()) 
+            dispach(Omborchi.actions.bo())
         }
 
         e.preventDefault()
@@ -194,7 +198,7 @@ export default function App() {
                     <div>
                     <p className='formp mb-[9px]'>Total</p>
                     <div className='flex h-12 items-center justify-between w-[100px]'>
-                        <p className='yz'>00</p>
+                        <p className='yz'>{itm[a-1].prise*itm[a-1].qty}</p>
                         <svg onClick={()=>Ochr(a)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M7 6V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7ZM9 4V6H15V4H9Z"></path></svg>
                     </div>
                     </div>
@@ -207,9 +211,9 @@ export default function App() {
         <h3 className='w-[327px] h-12 add rbg mt-12 rounded-full mx-auto flex items-center justify-center' onClick={()=>Qosh()}>+ Add New Item</h3>
    
         <div className="h-[91px] mt-[56px] flex gap-2 items-center justify-center roybg">
-            <button className="fsft text-white px-6 pt-[18px] pb-[15px] roybg rounded-full dsc" onClick={e=>Hendl(e, 'Discard')}>Discard</button>
+            <button className="fsft text-white px-6 pt-[18px] pb-[15px] roybg rounded-full dsc" onClick={e=>Hendl(e, 'Paid')}>Discard</button>
             <button className="fsft text-white px-6 pt-[18px] pb-[15px] bg-[#252945] rounded-full" onClick={e=>Hendl(e, 'Draft')}>Save as Draft</button>
-            <button className="fsft text-white px-7 pt-[18px] pb-[15px] bg-[#7C5DFA] rounded-full" onClick={e=>Hendl(e, 'Send')}>Save & Send</button>
+            <button className="fsft text-white px-7 pt-[18px] pb-[15px] bg-[#7C5DFA] rounded-full" onClick={e=>Hendl(e, 'Pending')}>Save & Send</button>
         </div>
       
     </form>

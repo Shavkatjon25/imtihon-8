@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux'
 function Edit() {
   const edt=useSelector((state) => state.edt)
   const dispach=useDispatch();
+  console.log('k');
   return (
     <div className={`lg:pl-[103px] bg-[#00000043] absolute min-h-full top-0 w-full  ${edt ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.eh())}>
 

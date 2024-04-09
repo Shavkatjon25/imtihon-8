@@ -41,9 +41,14 @@ export const Omborchi = createSlice({
         muddat:'',
         pd:'',
 
-        itm:[{itname:'', qty:'', prise:''}  ],}
+        itm:[{itname:'', qty:'', prise:''}  ],},
+
+        id:''
   },
   reducers: {
+    aydi:(state, {payload})=>{
+      state.id=payload
+    },
     bo:(state)=>{
       state.itm=[{itname:'', qty:'', prise:''} ]
     },

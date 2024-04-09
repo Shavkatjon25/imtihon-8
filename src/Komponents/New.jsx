@@ -6,6 +6,8 @@ import { useSelector, useDispatch } from 'react-redux'
 function New() {
   const ochyop=useSelector((state) => state.oyna)
   const dispach=useDispatch();
+
+  
   return (
     <div className={`lg:pl-[103px] bg-[#00000043] absolute top-0 w-full  ${ochyop ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.oy())}>
 

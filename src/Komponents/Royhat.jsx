@@ -23,7 +23,7 @@ useMemo(()=>{
   console.log(n);
   return (
     <Link to={'/data'}>
-    <div key={Math.random()*1000} className=" w-full flex justify-between p-6 md:p-4 md:gap-10 md:items-center rounded-lg roybg" onClick={()=>{dispach(Omborchi.actions.dt(n))}}>
+    <div key={Math.random()*1000} className=" w-full flex justify-between p-6 md:p-4 md:gap-10 md:items-center rounded-lg roybg" onClick={()=>{dispach(Omborchi.actions.dt(n)); dispach(Omborchi.actions.aydi(n.m.id))}}>
         <div className="md:flex  md:justify-between md:items-center">
             <h2 className="rt30"><span className="text-[#7E88C3]">#</span>RT3080</h2>
             <h3 className="mt-6 mb-[9px] sana md:m-0 md:ml-7 md:mr-[51px]">{n.m.kun}</h3>

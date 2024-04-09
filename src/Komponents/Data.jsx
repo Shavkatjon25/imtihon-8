@@ -1,11 +1,39 @@
 import { useMemo, useState } from "react";
 import { useSelector} from 'react-redux'
 import { Omborchi } from "../Omborchi";
+import { onValue, ref } from "firebase/database";
+import { db } from "../Firebase";
 
 function Data() {
+    const [ml, setMl]=useState({ adres:'',
+    city:'',
+    postcode:'',
+    country:'',
+   m:{id:'23'},
+    name:'',
+    email:'',
+    cadres:'',
+    ccity:'',
+    cpostcode:'',
+    ccountry:'',
+    kun:'',
+    muddat:'',
+    pd:'',
+
+    itm:[{itname:'', qty:'', prise:''}  ],})
+    const aydi=useSelector(k=>k.id)
+    const starCountRef = ref(db, 'users/'+aydi );
+    let dt;
+useMemo(()=>{
+    onValue(starCountRef, (snapshot) => {
+        dt = snapshot.val();
+        console.log(dt);
+        setMl(dt)
+      })
+}, [])
     const [count, setCount]=useState();
     const n=useSelector(k=>k.oydt)
-    const ml=n.m
+   
   
   useMemo(()=>{
     let yeg=0
