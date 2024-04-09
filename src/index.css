@@ -1,0 +1,324 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --color-dr-invo:#FFFFFF;
+    --color-soni:#DFE3FA;
+    --bg-color:#141625;
+    --color-royhat: #1E2139;
+    --color-bg-dt:#252945;
+    --bg-color-tt:#0C0E16;
+    --color-royht: #1E2139;
+    --color-form:#888EB0;
+}
+
+
+
+
+.md{
+
+    --color-form:#7E88C3;
+    --color-bg-dt:#F9FAFE;
+    --color-dr-invo:#0C0E16;
+    --color-soni:#888EB0;
+    --bg-color:#F8F8FB;
+    --color-royht: #F8F8FB;
+    --color-royhat:#fff;
+    --bg-color-tt:#373B53;
+}
+
+.dsc{
+    color: var(--color-dr-invo);
+}
+
+.rbg{
+    background: var(--color-royht);
+}
+
+.tt{
+    background: var(--bg-color-tt);
+}
+.dt{
+    background:var(--color-bg-dt);
+}
+.roybg{
+    background: var(--color-royhat);
+}
+
+.bgd{
+    background: var(--bg-color);
+}
+
+
+
+.invo{
+font-family: League Spartan;
+font-size: 24px;
+font-weight: 700;
+line-height: 22.08px;
+letter-spacing: -0.75px;
+text-align: left;
+color: var(--color-dr-invo);
+}
+
+.soni{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);
+}
+.filtr{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: right;
+    color: var(--color-dr-invo);
+}
+
+.new{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    
+}
+
+.rt30{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: var(--color-dr-invo);
+}
+
+.sana{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);
+}
+
+.pul{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: var(--color-dr-invo);
+}
+
+.name{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: right;
+    color: var(--color-dr-invo);
+}
+.peid{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    
+}
+
+.create{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: center;
+    color: var(--color-soni);
+}
+
+.is{
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22.08px;
+    letter-spacing: -0.75px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.go{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.status{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);    
+}
+.graf{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);    
+}
+.graf1{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);
+}
+
+.graf3{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);    
+}
+
+.gr24{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.due{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: #fff;    
+}
+.duepl{
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    text-align: right;
+    color: #fff;    
+}
+.fsft{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: center;    
+}
+
+
+.bill{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;    
+}
+.newin{
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.yz{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.formp{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-form);
+}
+.itm{
+    font-family: League Spartan;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.375px;
+    text-align: left;
+    color: #777F98;    
+}
+
+.add{
+    font-family: League Spartan;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+    text-align: center;
+    color:#888EB0;    
+}
+
+.confirm{
+    font-family: League Spartan;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    color: var(--color-dr-invo);    
+}
+
+.are{
+    font-family: League Spartan;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: var(--color-soni);    
+}
