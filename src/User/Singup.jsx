@@ -45,7 +45,7 @@ function Aler(){
   .then((userCredential) => {
     const user = userCredential.user;
     console.log(user);
-    navigate('/userdata')
+    navigate('/')
     
   })
   .catch((error) => {
