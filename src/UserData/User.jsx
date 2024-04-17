@@ -13,7 +13,7 @@ import { Omborchi } from "../Omborchi";
 function User(b) {
   const [dz, setDz]=useState(false);
 
-   const dispach=useDispatch(); 
+    
 
 
 
@@ -25,7 +25,7 @@ function User(b) {
             return;
           }
       
-          // Faylning tipini tekshirish
+        
           if (!file.type.startsWith('image/')) {
             alert("Faqatgina rasm faylini yuklashingiz mumkin!");
             setDz(false)
@@ -39,13 +39,8 @@ function User(b) {
 
           getDownloadURL(storageRef).then((downloadURL) => { 
             console.log('Faylning URL manzili:', downloadURL);
-            dispach(Omborchi.actions.url(downloadURL));
-            return(
-              <div role="alert" class="alert alert-success">
-              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              <span>Your purchase has been confirmed!</span>
-            </div>
-            )
+            
+            localStorage.setItem('ras', downloadURL)
           }).catch((error) => {
             console.error('Faylni URL sifatida olishda xatolik yuz berdi', error);
             setDz(false)
