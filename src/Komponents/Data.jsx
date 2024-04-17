@@ -27,7 +27,6 @@ function Data() {
 useMemo(()=>{
     onValue(starCountRef, (snapshot) => {
         dt = snapshot.val();
-        console.log(dt);
         setMl(dt)
       })
 }, [])

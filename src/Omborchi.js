@@ -5,6 +5,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const Omborchi = createSlice({
   name: 'counter',
   initialState:{
+    img:'',
         edt:false,
         adres:'',
         city:'',
@@ -103,6 +104,9 @@ export const Omborchi = createSlice({
 
       itname:(state, {payload})=>{
         state.itm[payload[1]].itname=payload[0]
+      },
+      url:(state, {payload})=>{
+        state.img=payload
       },
       
       qty:(state, {payload})=>{

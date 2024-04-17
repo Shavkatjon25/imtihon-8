@@ -39,7 +39,7 @@ export default function EditForm() {
     pd, itm} = useSelector((state) => state)
     
     const dx=useSelector(k=>k.id)
-    console.log(dx);
+    
 
     useEffect(()=>{
         let ms=[]
@@ -51,6 +51,12 @@ export default function EditForm() {
     },[])    
 
 
+    function Hndl(e){
+        dispach(Omborchi.actions.eh()) ;
+        dispach(Omborchi.actions.bo()) 
+        
+        e.preventDefault()
+    }
 
     function Hendl(e, k){
        
@@ -226,8 +232,8 @@ export default function EditForm() {
    
         <div className="h-[91px] mt-[56px] flex gap-2 items-center justify-center roybg">
             
-            <button className="fsft text-white px-6 pt-[18px] pb-[15px] bg-[#252945] rounded-full" onClick={e=>Hendl(e, 'Draft')}>Cancel</button>
-            <button className="fsft text-white px-7 pt-[18px] pb-[15px] bg-[#7C5DFA] rounded-full" onClick={e=>Hendl(e, 'Send')}>Save Changes</button>
+            <button className="fsft text-white px-6 pt-[18px] pb-[15px] bg-[#252945] rounded-full" onClick={e=>Hndl(e)}>Cancel</button>
+            <button className="fsft text-white px-7 pt-[18px] pb-[15px] bg-[#7C5DFA] rounded-full" onClick={e=>Hendl(e,'Pending')}>Save Changes</button>
         </div>
       
     </form>

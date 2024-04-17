@@ -7,8 +7,15 @@ import Ombor from './Ombor';
 import { Provider } from 'react-redux'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Edit from './Komponents/Edit';
+import Singup from './User/Singup';
+import Singin from './User/Singin';
+import User from './UserData/User';
 
 const router=createBrowserRouter([
+  {
+    path:'/in',
+    element:<Singin/>
+  },
   {
     path:'/',
     element:<Sahifa1/>
@@ -16,7 +23,16 @@ const router=createBrowserRouter([
   {
     path:'/data',
     element:<Sahifa2/>
+  },
+  {
+    path:'/user',
+    element:<Singup/>
+  },
+  {
+    path:'/userdata',
+    element:<User/>
   }
+
 ])
 
 

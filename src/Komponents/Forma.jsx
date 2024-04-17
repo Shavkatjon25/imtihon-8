@@ -37,14 +37,16 @@ export default function App() {
     pd, itm} = useSelector((state) => state)
     
 
-    console.log('n');
+
 
     function Hendl(e, k){
              
 
         if (adres&&city&&postcode&&country&&name&&email&&cadres&&ccity&&ccountry&&cpostcode&&kun&&muddat&&pd) {
             const date=new Date();
+            
             const soat=date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay()+'__'+date.getHours()+':'+date.getMinutes()+':'+date.getSeconds();
+
             writeUserData(adres, city, postcode, country, name, email, cadres, ccity, ccountry, cpostcode, kun, muddat, pd, itm, k, soat)
             dispach(Omborchi.actions.oy()) 
             dispach(Omborchi.actions.bo())
