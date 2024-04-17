@@ -13,7 +13,7 @@ import { Omborchi } from "../Omborchi";
 function User(b) {
   const [dz, setDz]=useState(false);
 
-    
+   const dispach=useDispatch(); 
 
 
 
@@ -39,7 +39,7 @@ function User(b) {
 
           getDownloadURL(storageRef).then((downloadURL) => { 
             console.log('Faylning URL manzili:', downloadURL);
-            
+            dispach(Omborchi.actions.url(downloadURL));
             localStorage.setItem('ras', downloadURL)
           }).catch((error) => {
             console.error('Faylni URL sifatida olishda xatolik yuz berdi', error);

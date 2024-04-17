@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 
 
 function Hedr(a) {
+  const rasm=useSelector(k=>k.img)
   return (
     <div className="w-full bg-[#1E2139] h-18 flex justify-between items-center md:h-20 lg:h-[100vh] lg:flex-col lg:w-[103px] lg:rounded-r-[28px] lg:fixed">
         <img src="./logo.svg" alt="" className="h-full lg:w-full lg:h-[103px]"/>
