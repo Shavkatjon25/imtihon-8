@@ -6,7 +6,8 @@ import { auth } from "../Firebase";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import User from "../UserData/User";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Omborchi } from "../Omborchi";
 
 
 
@@ -19,7 +20,8 @@ function Singup() {
   const [pwd, setPwd]=useState('');
 const [pwdtk, setPwdtk]=useState('');
 const [err, setErr]=useState(true)
-const navigate=useNavigate()
+const navigate=useNavigate();
+const dispach=useDispatch();
 const png=useSelector(k=>k.img)
 function Aler(){
   setAlert(true);
@@ -49,6 +51,7 @@ function Aler(){
     navigate('/');
    localStorage.setItem('ras', png);
    localStorage.setItem('nm', name);
+    dispach(Omborchi.actions.url(name))
     return;
   })
   .catch((error) => {

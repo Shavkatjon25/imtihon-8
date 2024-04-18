@@ -10,7 +10,10 @@ function DeleteUser() {
     function Delet(){
         
         const user = auth.currentUser;
-        console.log(user);
+        localStorage.setItem('nm','');
+        localStorage.setItem('ras', '');
+        dispach(Omborchi.actions.urd())
+        dispach(Omborchi.actions.url(''))
         deleteUser(user).then(() => {
           
         }).catch((error) => {
