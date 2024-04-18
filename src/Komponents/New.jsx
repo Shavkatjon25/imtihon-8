@@ -9,7 +9,7 @@ function New() {
 
   
   return (
-    <div className={`lg:pl-[103px] bg-[#00000043] absolute top-0 w-full  ${ochyop ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.oy())}>
+    <div className={`lg:pl-[103px] sp bg-[#00000043] absolute top-0 w-full  ${ochyop ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.oy())}>
 
 
             <div className="max-w-[616px] roybg" onClick={e=>e.stopPropagation()}>

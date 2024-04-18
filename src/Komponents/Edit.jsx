@@ -8,7 +8,7 @@ function Edit() {
   const dispach=useDispatch();
 
   return (
-    <div className={`lg:pl-[103px] bg-[#00000043] absolute min-h-full top-0 w-full  ${edt ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.eh())}>
+    <div className={`lg:pl-[103px] bg-[#00000043] absolute sp min-h-full top-0 w-full  ${edt ? '' : 'hidden'}`} onClick={()=>dispach(Omborchi.actions.eh())}>
 
 
             <div className="max-w-[616px] roybg" onClick={e=>e.stopPropagation()}>

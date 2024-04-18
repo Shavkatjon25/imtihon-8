@@ -89,7 +89,7 @@ useMemo(()=>{
 
 
   return (
-    <div className={`pt-8 max-w-[730px] mx-auto lg:pt-[78px]`}>
+    <div className={`pt-8 max-w-[730px] mx-auto lg:pt-[78px] so`}>
       <div className="flex px-6 gap-[18px] lg:w-[730px] lg:p-0">
           <div className="flex-1">
             <h2 className="invo md:text-[32px] lg:text-[36px] lg:mb-[6px]">Invoices</h2>
@@ -100,7 +100,7 @@ useMemo(()=>{
           <div className="flex items-center cursor-pointer" onClick={()=>setFiltr(!filtr)}>
             <h2 className="filtr flex gap-1" >Filter <span className="hidden md:block">by status</span></h2>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(11,135,243,1)"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
-            <div className={`absolute w-[150px] z-30 h-32 mt-40 cursor-auto rounded-md shadow-2xl flex flex-col gap-2  roybg p-6 ${filtr ? '': 'hidden'}`} onClick={e=>e.stopPropagation()}>
+            <div className={`absolute w-[150px] z-30 h-32 mt-40 cursor-auto rounded-md sahifa shadow-2xl flex flex-col gap-2  roybg p-6 ${filtr ? '': 'hidden'}`} onClick={e=>e.stopPropagation()}>
             <div className="flex gap-[13px]" onClick={()=>{Flt('dra')}}>
             <input type="checkbox" id="draft" checked={draft}/>
             <label for="draft" className="cursor-pointer go">Draft</label>

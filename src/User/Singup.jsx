@@ -1,11 +1,12 @@
 import { TypeAnimation } from "react-type-animation"
 
 
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import User from "../UserData/User";
+import { useSelector } from "react-redux";
 
 
 
@@ -19,7 +20,7 @@ function Singup() {
 const [pwdtk, setPwdtk]=useState('');
 const [err, setErr]=useState(true)
 const navigate=useNavigate()
-
+const png=useSelector(k=>k.img)
 function Aler(){
   setAlert(true);
   setTimeout(()=>{
@@ -44,12 +45,15 @@ function Aler(){
     createUserWithEmailAndPassword(auth, email, pwd)
   .then((userCredential) => {
     const user = userCredential.user;
-    console.log(user);
-    navigate('/')
-    
+    console.log(user)
+    navigate('/');
+   localStorage.setItem('ras', png);
+   localStorage.setItem('nm', name);
+    return;
   })
   .catch((error) => {
     setEmail('')
+    setPwd('')
   
   });
   }

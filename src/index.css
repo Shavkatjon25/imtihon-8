@@ -373,4 +373,49 @@ input[type="checkbox"] {
    
   }
 }
+
+.sahifa{
+    animation: bounc 0.5s ;
+}
   
+@keyframes bounc {
+    0%{
+          transform: scale(0);
+     
+    }
+    100% {
+      transform: scale(1);
+     
+    }
+  }
+
+  .so {
+    animation: bounc-in 1s;
+  }
+  
+  
+  .sp {
+    animation: bounc-out 1s ;
+  }
+  
+  @keyframes bounc-in {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounc-out {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

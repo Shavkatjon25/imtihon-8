@@ -38,7 +38,7 @@ const router=createBrowserRouter([
 
 function App() {
   
-  const [mod, setMod]=useState(localStorage.getItem('md'));
+  const [mod, setMod]=useState(localStorage.getItem('md') ? localStorage.getItem('md'):'dark');
   
 
 

@@ -14,6 +14,8 @@ function Sahifa2() {
     const malumot=useSelector(k=>k.oydt)
     const dispach=useDispatch()
 
+
+
     function Statistika(){
         set(ref(db, 'users/'+ml.id ), {...ml, k:'Paid'});
     }
@@ -42,7 +44,7 @@ function Sahifa2() {
     }
 
   return (
-        <div className={`w-full`}>
+        <div className={`w-full so`}>
 
     <div className="w-full min-h-[100vr] bgd pt-[33px] max-w-[730px] mx-auto">
         <div className=" w-full  px-6">

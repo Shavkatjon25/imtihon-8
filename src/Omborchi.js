@@ -5,6 +5,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const Omborchi = createSlice({
   name: 'counter',
   initialState:{
+    udt:false,
     img:'',
         edt:false,
         adres:'',
@@ -118,6 +119,10 @@ export const Omborchi = createSlice({
       },
       mud:(state, {payload})=>{
         state.muddat=payload
+      },
+
+      urd:(state)=>{
+        state.udt=!state.udt
       },
 
       oy:(state)=>{state.oyna=!state.oyna},
